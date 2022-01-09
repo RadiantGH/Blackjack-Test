@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6D2Oxlsb1uviIWRpLv4WAzfSIAp6AnUYaajny44z+b8yeIQ1sHVF8RKE1svaVocm0Hsc+xSuQbavSBA4hVKDWg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iangr\\Desktop\\Misc Projects\\Blackjack Test\\Blackjack Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iangr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.17\\microsoft.netcore.app.host.win-x64.3.1.17.nupkg.sha512"
+  ],
+  "logs": []
+}
