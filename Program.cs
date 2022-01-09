@@ -6,7 +6,7 @@ namespace Blackjack_Test
     {
         static void Main(string[] args)
         {
-            string written = Console.ReadLine();
+            Blackjack.Startup(); 
         }
     }
 }
