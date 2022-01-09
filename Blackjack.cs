@@ -15,6 +15,7 @@ namespace Blackjack_Test
 
         static int gamesWon;
         static int gamesLost;
+        static int gamesDrawn;
 
         static Card[] cardlist;
         static List<Card> deck;
@@ -86,6 +87,7 @@ namespace Blackjack_Test
             if(surrender)
             {
                 Console.WriteLine("YOU SURRENDERED!");
+                gamesLost++;
             }
             else
             {
@@ -116,17 +118,23 @@ namespace Blackjack_Test
                 if (gameResult == 0)
                 {
                     Console.WriteLine("DRAW!");
+                    gamesDrawn++;
                 }
                 else if (gameResult == 1)
                 {
                     Console.WriteLine("DEFEAT!");
+                    gamesLost++;
                 }
                 else
                 {
                     Console.WriteLine("VICTORY!");
+                    gamesWon++;
                 }
             }
 
+            Console.WriteLine();
+            Console.WriteLine("Games Won: " + gamesWon + " | Games Lost: " + gamesLost + " | Games Drawn: " + gamesDrawn);
+            Console.WriteLine();
             Console.WriteLine("Play again (Z) or Quit (X) ?");
             if(TakeYesNo())
             {
@@ -134,6 +142,7 @@ namespace Blackjack_Test
             }
             else
             {
+                Console.WriteLine();
                 Console.WriteLine("Thanks for playing!\nPress any key to end the program...");
                 Console.ReadKey();
                 Environment.Exit(-1);
