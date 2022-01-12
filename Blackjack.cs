@@ -13,9 +13,14 @@ namespace Blackjack_Test
         const int ACE_MIN = 1;
         const int ACE_MAX = 11;
 
+        const float WIN_MULTIPLIER = 1.5f;
+
         static int gamesWon;
         static int gamesLost;
         static int gamesDrawn;
+
+        static int money;
+        static int curBet;
 
         static Card[] cardlist;
         static List<Card> deck;
